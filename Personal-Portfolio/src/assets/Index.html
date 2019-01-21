@@ -9,12 +9,13 @@
         <title>aCody</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="icon" href="img/New Project.png" type="image/png" sizes="32x32">
         <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body>
@@ -29,11 +30,10 @@
                         <img src="icons/chevron-right-solid.svg" class="chevron">
                 </div>
                 <div class="nav-bar">
-                    <a>HOME</a>
-                    <a>SKILLS</a>
-                    <a>PORTFOLIO</a>
-                    <a>ABOUT ME</a>
-                    <a>CONTACT</a>
+                    <a href="#skills_link">SKILLS</a>
+                    <a href="#portfolio_link">PORTFOLIO</a>
+                    <a href="#bio_link">ABOUT ME</a>
+                    <a href="#contact_link">CONTACT</a>
                 </div>
             </nav>
         <section class="top">
@@ -46,104 +46,127 @@
                 </div>
                 <div class="middle" data-aos="zoom-out-down" data-aos-duration="3000">
                     <p>
-                        Let's work together to make your product stand out. I create beautiful and functional websites.
-                        I work with my clients step by step from the <br>idea stage until the fully functioning web application.
+                        Let's work together to make your product stand out.<br>I create beautiful and functional websites.
+                        I work with my clients step by step from the idea stage until the fully functioning web application.
                     </p>
                 </div>
                 <div>
-
                 </div>
-
         </section>
-        
-
         <main>
             <section class="start">
-                    <div data-aos="fade-right" data-aos-duration="3000">
+                    <div data-aos="fade-right" data-aos-duration="1500">
                         <h4>DISCOVER</h4>
                         <p>Tell me about your project and<br>we brainstorm together the<br>features to create a plan for<br>your product to launch.</p>
                     </div>
-                    <div data-aos="fade-right" data-aos-duration="1000">
+                    <div data-aos="fade-right" data-aos-duration="1500">
                         <h4>DESIGN</h4>
                         <p>We protoype and develop<br>your product. We work together intensily to incorporat your feedback.</p>
                     </div>
-                    <div data-aos="fade-left" data-aos-duration="1000"> 
+                    <div data-aos="fade-left" data-aos-duration="1500"> 
                         <h4>BE READY</h4>
                         <p>We deploy your product and now your website is ready to get the traction. Get out there and <br>grow your audience.</p>      
                     </div>
-                    <div data-aos="fade-left" data-aos-duration="3000">
+                    <div data-aos="fade-left" data-aos-duration="1500">
                         <h4>DEPLOY</h4>
                         <p>We design the wireframe and agree together how to create the best experience for your users to <br>present your brand.</p>
                     </div>
             </section>
     
-            <section class="skills">
+            <section class="skills" id="skills_link">
     
                 <h2>MY SKILLS</h2>
                 <aside data-aos="flip-left" data-aos-duration="1000">
                     <div class="context">HTML</div>
                     <div class="fill"></div>
-                    <div class="num1 end">80%</div>
+                    <div class="num1 end">85%</div>
                 </aside>
                 <aside data-aos="flip-left" data-aos-duration="2000">
                     <div class="context">CSS/SASS</div>
                     <div class="fill"></div>
-                    <div class="num2 end">75%</div>
+                    <div class="num2 end">80%</div>
                 </aside>
-                <aside data-aos="flip-left" data-aos-duration="3000">
+                <aside data-aos="flip-left" data-aos-duration="2500">
                     <div class="context">JavaScript</div>
                     <div class="fill"></div>
-                    <div class="num3 end">60%</div>
+                    <div class="num3 end">75%</div>
+                </aside>
+                <aside data-aos="flip-left" data-aos-duration="3000">
+                    <div class="context">React.js</div>
+                    <div class="fill"></div>
+                    <div class="num4 end">60%</div>
+                </aside>
+                <aside data-aos="flip-left" data-aos-duration="2000">
+                    <div class="context">PHP</div>
+                    <div class="fill"></div>
+                    <div class="num5 end">75%</div>
+                </aside>
+                <aside data-aos="flip-left" data-aos-duration="2000">
+                    <div class="context">LaraveL</div>
+                    <div class="fill"></div>
+                    <div class="num6 end">60%</div>
                 </aside>
             </section>
         </main>
 
 
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio_link">
             <h2>MY PORTFOLIO</h2>
             <article>
                 <div>
-                    <img src="">
-                    <p>Description of hackathon project #1. Description of hackathon project #1. Description of hackathon project #1.</p>
-                    <h5>Tech stack: HTML,CSS,BOOTSTRAP</h5>
+                    <a href="" target="_blank"><img class="hktn1" src="icons/logo.svg"></a>
+                    <aside>
+                        <p>Project 1:<br>Generic Hipster Coffee<br>Website for coffee shop.</p>
+                        <h5>Tech stack: HTML,CSS,BOOTSTRAP</h5>
+                    </aside>
                 </div>
                 <div>
-                    <img src="">
-                    <p>Description of hackathon project #2. Description of hackathon project #2. Description of hackathon project #2.</p>
-                    <h5>Tech stack:</h5>
+                    <a><img src=""></a>
+                    <aside>
+                        <p>Description of hackathon project #2. Description of hackathon project #2. Description of hackathon project #2.</p>
+                        <h5>Tech stack:</h5>
+                    </aside>
                 </div>
                 <div>
-                    <img src="">
-                    <p>Description of hackathon project #3. Description of hackathon project #3. Description of hackathon project #3.</p>
-                    <h5>Tech stack:</h5>
+                    <a><img src=""></a>
+                    <aside>
+                        <p>Description of hackathon project #3. Description of hackathon project #3. Description of hackathon project #3.</p>
+                        <h5>Tech stack:</h5>
+                    </aside>
                 </div>
             </article>
             <article>
                 <div>
-                    <img src="">
-                    <p>Description of hackathon project #4. Description of hackathon project #4. Description of hackathon project #4.</p>
-                    <h5>Tech stack:</h5>
+                    <a><img src=""></a>
+                    <aside>
+                        <p>Description of hackathon project #4. Description of hackathon project #4. Description of hackathon project #4.</p>
+                        <h5>Tech stack:</h5>
+                    </aside>
                 </div>
                 <div>
-                    <img src="">
-                    <p>Description of hackathon project #5. Description of hackathon project #5. Description of hackathon project #5.</p>
-                    <h5>Tech stack:</h5>
+                    <a><img src=""></a>
+                    <aside>
+                        <p>Description of hackathon project #5. Description of hackathon project #5. Description of hackathon project #5.</p>
+                        <h5>Tech stack:</h5>
+                    </aside>
                 </div>
                 <div>
-                    <img src="">
-                    <p>Description of hackathon project #6. Description of hackathon project #6. Description of hackathon project #6.</p>
-                    <h5>Tech stack:</h5>
+                    <a><img src=""></a>
+                    <aside>
+                        <p>Description of hackathon project #6. Description of hackathon project #6. Description of hackathon project #6.</p>
+                        <h5>Tech stack:</h5>
+                    </aside>
                 </div>
             </article>
         </section>
 
 
 
-        <h2 class="title">ABOUT ME</h2>
+        <h2 class="title" id="bio_link">ABOUT ME</h2>
 
         <section class="bio">
-                <img src="img/17211790_1079003242245444_5077274554489233745_o.jpg" alt="">
+            <img        src="img/17211790_1079003242245444_5077274554489233745_o.jpg" alt="">
             <div>
                 <p>
                     - my name is Anđelko and I live in Prague.<br>
@@ -159,9 +182,9 @@
         </section>
 
         <footer>
-            <section class="social">
+            <section class="social" id="contact_link">
                 <h2>FIND ME HERE</h2>
-                <div data-aos="flip-left">
+                <div>
                     <a href="https://www.linkedin.com/in/an%C4%91elko-lipoti%C4%87-1a5068177/"><img src="icons/linkedin-brands.svg" alt="linkedin"></a>
                     <a href="https://github.com/DekoCro"><img src="icons/github-brands.svg" alt="github"></a>
                     <a href="https://www.instagram.com/dzeko_3lj/?hl=en"><img src="icons/instagram-brands.svg" alt="instagram"></a>

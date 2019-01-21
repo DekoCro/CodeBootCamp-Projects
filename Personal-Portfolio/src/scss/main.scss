@@ -1,0 +1,521 @@
+@import "colors";
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #000000;
+    background-image: $main-bg3;
+    background-attachment: fixed;
+    background-size: cover;
+    /*font-family: 'Artifika', serif;*/
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    display: flex;
+    flex-direction: column;
+}
+/*------------NAV SECTION HERE----------*/
+nav {
+    display: flex;
+    flex-direction: row;
+    color: $col2;
+    height: 4.2em;
+    margin-bottom: 5em;
+    margin-top: 1em;
+    width: 100%;
+    @media all and (max-width: 480px) {
+        margin-top: 0;
+        margin-bottom: 1em;
+        height: 2.2em;
+    }
+    @media all and (min-width: 481px) and (max-width: 768px) {
+        margin-top: 0;
+        margin-bottom: 1.5em;
+        height: 2.5em;
+    }
+    .nav-bar {
+        flex: 1 1 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media all and (max-width: 480px) {
+            justify-content: center;
+            align-items: stretch;
+        }
+        @media all and (min-width: 481px) and (max-width: 768px) {
+            justify-content: space-between;
+        }
+        a {
+            display: block;
+            border: 1px solid $col3;
+            color: white;
+            text-decoration: none; 
+            border-radius: 20%;
+            padding: 2em;
+            background-image: linear-gradient($col4, $col5);
+            @media all and (max-width: 480px) {
+                padding: .8em 0.3em;
+                font-size: 10px;
+                border-radius: 5%;
+            }
+            @media all and (min-width: 481px) and (max-width: 768px) {
+                font-size: 14px;
+                padding: 1em .5em;
+            }
+        }
+        
+    }
+    .logo {
+        flex-grow: 0;
+        display: flex;
+        align-items: center;
+        img {
+            width: 4em;
+            height: 4em;
+            @media all and (max-width: 480px) {
+                width: 2em;
+                height: 2em;
+            }
+            @media all and (min-width: 481px) and (max-width: 768px) {
+                width: 3em;
+                height: 3em;
+            }
+            @media all and (max-width: 350px) {
+                display: none;
+            } 
+        }
+    }
+}
+.nav-bar a:hover {
+    border: 1px ridge $col1;
+    color: $col1;
+    background-image: linear-gradient($col6, $col7);
+    transition: all 0.3s ease-in-out;
+}
+/*------------MAIN SECTION HERE----------*/
+.top {
+    height: 40em;
+    background-image: url("../img/vector.png");
+    background-position: center;
+    background-size: cover;
+    color: $col2;
+    overflow: hidden;
+    border-radius: 20%; 
+    @media all and (max-width: 480px) {
+        height: 65vh;
+        border-radius: 5%;
+    }
+    @media all and (min-width: 481px) and (max-width: 768px) {
+        height: 70vh;
+        border-radius: 5%;
+    }
+    .upper {
+        height: 65%;
+        @media all and (max-width: 480px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media all and (min-width: 481px) and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h4 {
+            font-size: 2em;
+            transform:skew(0deg,-15deg);
+            line-height: 1.5em;
+            margin-left: 3em;
+            text-shadow: 6px 6px 8px $col4;
+            @media all and (max-width: 480px) {
+                transform:skew(0deg,0deg);
+            }
+            @media all and (min-width: 481px) and (max-width: 768px) {
+                transform:skew(0deg,0deg);
+                padding: 1em; 
+            }
+        }
+    }
+    .middle {
+        height: 20%;
+        /*background-image: linear-gradient($col5, $col4);*/
+        @media all and (max-width: 480px) {
+            height: 15%;
+        }
+        @media all and (min-width: 481px) and (max-width: 768px) {
+            height: 15%;
+        }
+        p {
+            padding-top: 1em;
+            text-align: center;
+            font-size: 1.7em;
+            @media all and (max-width: 480px) {
+                font-size: 12px;
+                margin: 0 auto;
+            }
+            @media all and (min-width: 481px) and (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+/*------------SKILLS SECTION HERE----------*/
+main {
+    display: flex;
+    flex-direction: column;
+    .start {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        color: $col2;
+        @media all and (max-width: 480px) {
+            flex-direction: column;
+        }
+        @media all and (min-width: 481px) and (max-width: 768px) {
+            flex-direction: row;
+
+        }
+        div {
+            border: 1px solid $col3;
+            border-radius: 50%;
+            width: 20em;
+            height: 15em;
+            background-image: linear-gradient($col4, $col5);
+            @media all and (max-width: 480px) {
+                border-radius: 5%;
+                width: 100%;
+                height: 20vh;
+            }
+            @media all and (min-width: 481px) and (max-width: 768px) {
+                width: calc(60%-1em);
+                border-radius: 5%;
+                height: 30vh;
+            }
+            p {
+                font-size: 0.9em;
+                padding-top: 1.8em;
+                transform:skew(0deg,-4deg);
+                @media all and (max-width: 480px) {
+                    margin: 0 1.5em;
+                    padding-top: .5em;
+                }
+            }
+            h4 {
+                padding-top: 1.8em;
+                transform:skew(0deg,-4deg);
+                @media all and (max-width: 480px) {
+                    padding-top: .5em;
+                }
+            }
+        }
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 2em;
+            color: $col1;
+            text-shadow: 6px 6px 8px brown;
+            font-size: 3em;
+        }
+        aside {
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            margin: 0 auto;
+            height: 5em;
+            padding: 1em;
+            @media all and (max-width: 480px) {
+                width: 90%;
+                height: 4em;
+                flex-wrap: wrap;
+            }
+            @media all and (min-width: 481px) and (max-width: 768px) {
+                height: 4em;
+                width: 90%;
+            }
+                .context {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid black;
+                    width: 6em;
+                    flex-grow: 0;
+                    color: $col2;
+                    background-image: linear-gradient($col4, $col5);
+                    border-radius: 15% 0 0 15%;
+                }
+                .fill {
+                    flex-grow: 100;
+                    border: 1px solid #3E484A;
+                    background-color: #3E484A;
+                }
+                .num1 {
+                    flex-grow: 15;
+                }
+                .num2 {
+                    flex-grow: 20;
+                }
+                .num3 {
+                    flex-grow: 25;
+                }
+                .num4 {
+                    flex-grow: 40;
+                }
+                .num5 {
+                    flex-grow: 25;
+                }
+                .num6 {
+                    flex-grow: 40;
+                }
+                .end {
+                    background-color: #91ACB7;
+                    border-radius: 0 15% 15% 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $col1;
+                }
+        }
+    }
+}
+.start div:hover {
+    border: 1px ridge $col1;
+    color: $col1;
+    background-image: linear-gradient($col6, $col7);
+    transition: all 0.3s ease-in-out;
+}
+/*------------PORTFOLIO SECTION HERE----------*/
+.portfolio {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    @media all and (max-width: 480px) {
+        margin-top: 2em;
+    }
+    h2 {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 2em;
+        color: $col1;
+        text-shadow: 6px 6px 8px brown;
+        font-size: 3em;
+        @media all and (max-width: 480px) {
+            margin-top: 0;
+        }
+        @media all and (min-width: 481px) and (max-width: 768px) {
+            margin-top: 0;
+        }
+    }
+    article {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: $col2;
+        @media all and (max-width: 480px) {
+            flex-direction: column;
+            margin-top: 0em;
+        }
+        @media all and (min-width: 481px) and (max-width: 768px) {
+            flex-direction: column;
+            margin-top: 0;
+        }
+        div {
+            flex: 1 1 0;
+            @media all and (max-width: 480px) {
+                width: 80%;
+                margin: 0 20%;
+            }
+            @media all and (min-width: 481px) and (max-width: 768px) {
+                display: flex;
+                flex-direction: row;
+            }
+            a { 
+                img {
+                    width: 80%;
+                    height: 14em;
+                    border: 1px solid red;
+                    @media all and (min-width: 481px) and (max-width: 768px) {
+                        width: 50%;
+                        margin-left: 1em;
+                        margin-bottom: 1em;
+                    }
+                }
+                .hktn1 {
+                    background-color: #f4db78;
+                    border: 1px solid #f4db78;
+                } 
+            }
+            
+            aside {
+                @media all and (min-width: 481px) and (max-width: 768px) {
+                    width: 35%;
+                    margin: 0 1em;
+                }
+            }
+              
+        }
+    }
+}
+/*------------ABOUT ME SECTION HERE----------*/
+.title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2em;
+    color: $col1;
+    text-shadow: 6px 6px 8px brown;
+    font-size: 3em;
+    @media all and (max-width: 480px) {
+        font-size: 2em;              
+    }
+}
+.bio {
+    background-image: linear-gradient($col4, $col5);
+    color: $col2;
+    border-radius: 14%;
+    display: flex;
+    flex-direction: row;
+    @media all and (max-width: 480px) {
+    display: inline;  
+    border-radius: 0%;
+    }
+    @media all and (min-width: 481px) and (max-width: 768px) {
+        border-radius: 0%;
+        display: inline;
+    }
+    img {
+        width: 20em;
+        height: 20em;
+        border-radius: 50%;
+        float: left;
+        @media all and (max-width: 480px) {
+            width: 50%;
+            height: 50%;
+        }
+        @media all and (min-width: 481px) and (max-width: 768px) {
+            border-radius: 5%;
+        }
+    }
+    div {
+        @media all and (max-width: 480px) {
+           display: flex;
+           flex-wrap: wrap;         
+        }
+        p {
+            font-size: 1.1em;
+            margin-top: 0;
+            margin-bottom: 0;
+            @media all and (max-width: 480px) {
+            font-size: 12px;
+            }
+            @media all and (min-width: 481px) and (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+        h5 {
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 0;
+            @media all and (max-width: 480px) {
+            font-size: 1em;          
+            }
+            @media all and (min-width: 481px) and (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+/*------------FOOTER SECTION HERE----------*/
+.social h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2em;
+    color: $col1;
+    text-shadow: 6px 6px 8px brown;
+    font-size: 3em;
+    @media all and (max-width: 480px) {
+        font-size: 2em;
+    }
+}
+.social div {
+    display: flex;
+    justify-content: space-around;
+    /*background-image: linear-gradient($col6, $col7);*/
+    align-items: center;
+    a {
+        :hover {
+            width: 8em;
+            height: 8em;
+            transition: all 0.4s ease-in-out;
+        } 
+        img {
+        width: 5em;
+        height: 5em;
+        margin: 2em auto;
+        @media all and (max-width: 480px) {
+            width: 3em;
+            height: 3em;
+        }
+        @media all and (min-width: 481px) and (max-width: 768px) {
+            width: 4em;
+            height: 4em;
+        }
+        }
+    }
+}
+footer h3 {
+    font-size: 3em;
+    background: -webkit-gradient(linear, left top, left bottom, from($col1), to($col2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @media all and (max-width: 480px) {
+     font-size: 1em;
+    }
+    @media all and (min-width: 481px) and (max-width: 768px) {
+        font-size: 2em;
+    }
+}
+/*--------------form section here---------*/
+
+form {
+    background-image: url("../img/media-998990_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    color: $col2;
+    height: 15em;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2em;
+    padding-top: 1.5em;
+    border-radius: 5%;
+    div {
+        display: flex;
+        flex-direction: column;
+        #email,
+        #phone {
+            margin-top: 1em;
+        }
+    }
+    .message {
+        width: 10em;
+        button {
+            cursor: pointer;
+            text-align: center;
+            height: 3em;
+            color: $col2;
+            background-image: linear-gradient($col5, $col4);
+            border: none;
+            font-family: 'Artifika', serif;
+            margin: 0 1em;
+            font-size: 1.2em;
+            :hover {
+                opacity: 0.5;
+                transition: all 0.3s ease;
+            }
+        }
+    } 
+}

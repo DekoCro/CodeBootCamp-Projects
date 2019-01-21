@@ -76,7 +76,7 @@ main {
     }   img {
         width: 14em;
         height: 17em;
-
+        
     }
 }
 /*------------characters section here---------*/
@@ -134,6 +134,7 @@ main {
             display: flex;
             flex-direction: column;
             padding-right: 1em;
+            margin-right: 1em;
             
             h4 {
                 margin: 0;
@@ -177,7 +178,7 @@ main {
             bottom: 0;
             left: 0;
             background-color: black;
-            color: $col2;
+            color: lightgray;
             margin: 0;
         }
         img {
@@ -209,5 +210,8 @@ footer {
     }
     h2 {
         height: 15%;
+        background-attachment: ;
+        
     }
 }
+

@@ -9,8 +9,9 @@
         <title>Contact form</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Artifika" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -18,18 +19,19 @@
         <![endif]-->
         <form>
             <div>
-                <label for="name">First name <abbr title="required">*</abbr></label>
+                <label for="name">First name <abbr title="Required">*</abbr></label>
                 <input id="name" type="text" name="username"><br>
-                <label for="name">Last name <abbr title="required">*</abbr></label>
+                <label for="name">Last name <abbr title="Required">*</abbr></label>
                 <input id="name" type="text" name="username"><br>
-                <label for="email">Email <abbr title="required">*</abbr></label>
+                <label for="email">Email <abbr title="Required">*</abbr></label>
                 <input id="email" type="text" name="email"><br>
                 <label for="Phone">Phone </label>
                 <input id="phone" type="number" name="Phone"><br>
             </div>
             <div class="message">
                 <label>My message:</label>
-                <input id="message" type="text" name="message" value="Type your message here..."><br>
+                <textarea cols="30" rows="10" placeholder="Type your message here..."></textarea>
+                <br>
                 <button type="button">SEND</button>
             </div>
         </form>

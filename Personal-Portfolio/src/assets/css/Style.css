@@ -266,6 +266,7 @@ form {
     justify-content: space-around;
     font-size: 2em;
     padding-top: 3em;
+    border-radius: 20%;
     
 }
 form div {
@@ -278,10 +279,6 @@ form div {
 }
 .message {
     width: 10em;
-}
-#message {
-    height: 18em;
-    color: #91ACB7;
 }
 button {
     cursor: pointer;
