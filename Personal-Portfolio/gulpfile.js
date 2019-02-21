@@ -43,7 +43,7 @@ const createSrcStructure = (done) => {
 // delete all the assets in dist
 const assetsClean = (done) => {
     return del(
-        ['dist/**/*', '!dist/**/*.css', '!dist/**/*.html', '!dist/**/*.js'], 
+        ['dist/icons/**/*', 'dist/img/**/*'], 
         { force: true }
     );
 }
@@ -57,6 +57,13 @@ const assetsPublish = (done) => {
 // publish HTML files
 const htmlPublish = (done) => {
     return gulp.src('src/assets/**/*.html')
+      .pipe(htmlmin({ collapseWhitespace: true }))
+      .pipe(gulp.dest('dist'));
+}
+
+// publish PHP files
+const phpPublish = (done) => {
+    return gulp.src('src/assets/**/*.php')
       .pipe(htmlmin({ collapseWhitespace: true }))
       .pipe(gulp.dest('dist'));
 }
@@ -87,6 +94,7 @@ const watchFiles = (done) => {
     gulp.watch("src/assets/**/*.html", htmlPublish);
     gulp.watch("src/scss/**/*.scss", scssCompile);
     gulp.watch("src/assets/js/**/*.js", minifyJs);
+    gulp.watch("src/assets/**/*.php", phpPublish);
 }
 
 
